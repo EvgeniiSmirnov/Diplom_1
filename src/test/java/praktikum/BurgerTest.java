@@ -64,7 +64,7 @@ public class BurgerTest {
         burger.addIngredient(mock);
         burger.addIngredient(ingredient);
         burger.moveIngredient(0, 1);
-        assertEquals(FAILED_MOVE_INGREDIENT_MESSAGE, burger.ingredients.get(1).toString(), str);
+        assertEquals(FAILED_MOVE_INGREDIENT_MESSAGE, str, burger.ingredients.get(1).toString());
     }
 
     @Test
